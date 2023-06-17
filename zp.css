@@ -1,0 +1,13 @@
+.zp{
+  margin:auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.zp img{
+  width: 100%;
+  border-radius:5px;
+}
+.zp li{
+  padding: 10px;
+}

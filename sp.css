@@ -1,0 +1,10 @@
+.sp{
+  margin: auto;
+  width:80%;
+  border: 3px solid #000000;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.sp video{
+  width:100%;
+}

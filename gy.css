@@ -1,0 +1,33 @@
+.gy-nr{
+  display: flex;
+  margin:auto;
+  width: 90%;
+  height: 200px;
+  background-color: #FFFFFFC7;
+  padding: 10px 10px 10px 5px;
+  border-radius: 5px;
+}
+.gy-nr-img{
+  width:30%;
+  padding: 15px 10px 10px 5px;
+}
+.gy-nr-img p{
+  text-align: center;
+  font-size: 10px;
+}
+.gy-nr-img img{
+  width: 100%;
+  border-radius: 5px;
+  align-items: center;
+}
+.gy-nr-txt{
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #000000F7;
+  padding: 5px;
+  width: 70%;
+  overflow: scroll;
+}
+.gy-nr-txt span{
+  font-size: 10px;
+}

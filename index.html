@@ -1,241 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>试图成为藤原拓海的老司机</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>个人官网</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
 </head>
 
+</body>
+</html>
+
+<style type="text/css">
+	body{
+		background: url("#") no-repeat center center fixed;
+                /*兼容浏览器版本*/
+                -webkit-background-size: cover;
+                -o-background-size: cover;                
+                background-size: cover;
+	}
+	</style>
+
+<body style="padding-top:10px;">
+    
+
+<head>
+  <title>皮卡皮卡</title>
+  <style>
+    /* 设置页面布局 */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    section {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+    }
+    .sidebar {
+      width: 20%;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    .content {
+      width: 80%;
+      padding: 10px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
 <body>
-  <!--头部-->
-  <div class="head">
-    <div class="head-logo">
-      <img src="image/icon.png" alt="" />
-      <span>LOGO</span>
-    </div>
-    <div class="head-list">
-    <nav>
+  <header>
+    <h1><span style="color:White;">应用大全</h1>
+  </header>
+  <section>
+    <div class="content">
+      <h2>安卓应用</h2>
       <ul>
-        <li>
-          <a href="index.html">首页</a>
-        </li>
-        <li>
-          <a href="#gy">关于</a>
-        </li>
-        <li>
-          <a href="#zp">作品</a>
-        </li>
-        <li>
-          <a href="#sp">视频</a>
-        </li>
+        <h1><a href="#">软件</a><h1>
+        <h1><a href="#">梯子</a><h1>
+        <h1><a href="#">视频</a><h1>
+        <h1><a href="#">小说</a><h1>
+        <h1><a href="#">工具</a><h1>
+        <h1><a href="#">AI</a><h1>
+        <h1><a href="#">以图搜图</a><h1>
       </ul>
-    </nav>
     </div>
-  </div>
-  
-  <!-- 轮播开始 -->
-    <link rel="stylesheet" href="css/box.css">
-  		<div class="box">
-
-			<div class="box-img"><img src="image/1.jpg"></div>
-
-			<div class="box-img"><img src="image/2.jpg"></div>
-			<div class="box-img"><img src="image/3.jpg"></div>
-			<div class="box-img"><img src="image/4.jpg"></div>
-			<div class="box-img"><img src="image/5.jpg"></div>
-			<div class="box-img"><img src="image/6.jpg"></div>
-			<div class="box-left">&lt;</div>
-			<div class="box-right">&gt;</div>
-			<div class="box-zhiding">
-				<ul>
-					<li class="botton"></li>
-					<li class="botton"></li>
-					<li class="botton"></li>
-					<li class="botton"></li>
-					<li class="botton"></li>
-					<li class="botton"></li>
-				</ul>
-			</div>
-		</div>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			var index=0;//标记当前图片索引
-			var f;
-			dingshiqi();
-			function dingshiqi(){
-				f=setInterval(function(){
-					if(index==$(".box-img").length-1){
-						index=0;
-						$(".box-img").css("opacity","0");
-						$(".box-img").eq(index).css("opacity","1");
-						$(".botton").css("background-color","#ccc");
-						$(".botton").eq(index).css("background-color","#fff");
-					}else{
-						index++;
-						$(".box-img").css("opacity","0");
-						$(".box-img").eq(index).css("opacity","1");
-						$(".botton").css("background-color","#ccc");
-						$(".botton").eq(index).css("background-color","#fff");
-					}
-				},4000)
-			}
-			$(".box-left").click(function(){
-				clearInterval(f);
-				if(index==0){
-					index=$(".box-img").length-1;
-					$(".box-img").css("opacity","0");
-					$(".box-img").eq(index).css("opacity","1");
-					$(".botton").css("background-color","#ccc");
-					$(".botton").eq(index).css("background-color","#fff");
-					dingshiqi();
-				}
-				else{
-					index--;
-					$(".box-img").css("opacity","0");
-					$(".box-img").eq(index).css("opacity","1");
-					$(".botton").css("background-color","#ccc");
-					$(".botton").eq(index).css("background-color","#fff");
-					dingshiqi();
-				}
-			})
-			$(".box-right").click(function(){
-				clearInterval(f);
-				if(index==$(".box-img").length-1){
-					index=0;
-					$(".box-img").css("opacity","0");
-					$(".box-img").eq(index).css("opacity","1");
-					$(".botton").css("background-color","#ccc");
-					$(".botton").eq(index).css("background-color","#fff");
-					dingshiqi();
-				}
-				else{
-					index++;
-					$(".box-img").css("opacity","0");
-					$(".box-img").eq(index).css("opacity","1");
-					$(".botton").css("background-color","#ccc");
-					$(".botton").eq(index).css("background-color","#fff");
-					dingshiqi();
-				}
-			})
-			
-				$(".botton").click(function(){
-					clearInterval(f);
-					var indexx=$(this).index();
-					index=indexx;
-					$(".box-img").css("opacity","0");
-					$(".box-img").eq(index).css("opacity","1");
-					$(".botton").css("background-color","#ccc");
-					$(".botton").eq(index).css("background-color","#fff");
-					dingshiqi();
-				})
-			
-		})
-	</script>
-  <!--轮播结束-->
-  <!--  关于开始  -->
-    <link rel="stylesheet" href="css/gy.css">
-  <div class="title" id="gy">
-    <div class="line"></div>
-    <h3>关于</h3>
-    <div class="line"></div>
-  </div>
-  <div class="gy-nr">
-    <div class="gy-nr-img">
-      <img src="image/gylogo.jpg" alt="" />
-      <p>疫情防控，人人有责</p>
+        <div class="content">
+      <h2>电脑应用</h2>
+      <ul>
+        <h1><a href="#">软件</a><h1>
+        <h1><a href="#">梯子</a><h1>
+        <h1><a href="#">游戏网站</a><h1>
+        <h1><a href="#">游戏加速器</a><h1>
+        <h1><a href="#">网站大全</a><h1>
+      </ul>
     </div>
-    <div class="gy-nr-txt">
-      <span>
-        <h3>前端</h3>
-        一、概述<br>
-1.前端是什么
-我们一般是在网站开发的上下文里提及前端开发，与之对应的是后端开发。
-粗糙地说，在开发一个网站的时候，后端人员负责那些不需要直接与用户打交道的代码，这些代码通常以数据为核心；前端人员的代码则会直接地交付到用户手中（通过浏览器），这种代码是围绕着展示界面这一目的而编写的。
-更宽泛地说，所有涉及到用户界面的开发都可以称之为前端开发。例如移动端开发（也就是手机应用程序的开发），现在也被很多人归入“大前端”这个概念里。传统的前端领域里也确实出现了一系列技术，让前端人员可以编写移动应用。
-<br>
-2.前端的特点
-前端写的是代码，但做的是视觉
-说到程序员，很多人的脑海中会立刻浮现出一个缺乏趣味的男性形象。
-这里我们并不准备深入地讨论这种刻板印象或这种形象本身。但万一你有志要成为一个前端开发人员，你应该要明白，你所做的事情将和那种刻板印象差异巨大。
-一个优秀的前端开发人员，一定不是一个没有通俗意义上的审美趣味的人。程序员虽然都是写代码的，但作用各不相同。前端开发人员所写的代码，归根结底是在写界面。一定程度上，前端程序员所做的事和设计人员并无太大区别，都是要为用户提供一个直观清晰、赏心悦目的使用界面。
-如果你是一个讨厌“美工”、不喜欢在视觉审美上花心思的人，你可能更适合做后端。当然，这不是说你必须是一个特别“潮流”的人，比如我个人在服饰穿着上完全没有任何“品味”可言。但你应该要对“美”有一种属于你自己的说法。
----前端人员天生讲多种语言
-经验丰富的程序员，一般都能掌握多种编程语言。但在一个具体的场景里，其它领域的程序员通常只需要使用一种特定的语言来完成工作；前端则不然。
-至少到目前为止，前端开发的根基依然是这样的三种语言：HTML、CSS、Javascript。传统上，我们认为HTML代表一个界面的结构、CSS装饰一个界面的样式、Javascript控制一个界面的行为。虽然这种特别明确的语言分工近年来正在不断地经受“挑战”，在它依然是初学者理解前端语言的最佳方式。
----前端是一个快速发展的领域
-近五年里、甚至十年、二十年里，可能都没有一个别的编程领域，它的技术发展得如前端这般迅速。
-这种快速的发展与迭代对前端开发人员而言有好有坏。
-往好的方面看，前端是一个特别蓬勃、旺盛的领域。首先是因为存在需求，才产生出这么活跃的社区。Javascript这门语言，以及整个前端领域，目前正处在一个非常“吃香”的阶段里。其次，技术的发展与迭代，说明我们写代码的方式一直在进化，这是一件既有实际的效率意义、又充满成就感的事情。
-它的坏处则是，许多人在这种近乎“荒唐”的进化步伐中渐渐感到不适。需要学习的东西太多了，昨天还在热门榜上占着位置的做法，可能今天一觉醒来就过时了。不时刻跟着新技术，就有落伍的危险与焦虑；但个人的精力与生活期许又不允许这样高强度、高密度的学习方式。
-总的来说，Javascript fatigue这种说法的出现并非空穴来风，目前的前端领域确实存在一定的压力。但只要我们根据自己的实际情况适当地做出调整、找到平衡，它更多的是一种机遇而不是困境。
-做自己喜欢的工作，是一件非常非常幸运的事。对我个人而言，这绝不仅仅是一句套话，它是我的真切经历与确实感受。
-我说不清楚为什么，但我真的喜欢编程。自从我转职做开发以后，我的生活质量乃至我整个人的精神气质都改变了。我几乎不再有过工作上的压力，我每天上班都很轻松，我做事特别投入，我总是不知不觉又到下班时间了。
-和很多事情一样，编程可以是一种生活里普适的技能，而不只是工作中为了领取工资被迫掌握的技术。就像喜欢画画、喜欢唱歌、喜欢学习外语一样，如果可以，你应该喜欢编程。这可能是成为一个程序员最重要的因素、同时也是最简单的途径。你越是享受它，越是使它在你的个人趣味里占据着自然而然的一部分，它就越不会成为你生活的负担。
-      </span>
-    </div>
-  </div>
-  <!--关于结束-->
-  <!--作品开始-->
-    <link rel="stylesheet" href="css/zp.css">
-    <div class="title" id="zp">
-    <div class="line"></div>
-    <h3>作品</h3>
-    <div class="line"></div>
-  </div>
-  <div class="zp">
-    <ul>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-    </ul>
-  </div>
-  <div class="zp">
-    <ul>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-    </ul>
-  </div>
-  <div class="zp">
-    <ul>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-      <li><img src="image/zplogo.png" alt="" /></li>
-    </ul>
-  </div>
-  <!--作品结束-->
-  
-  <!--视频开始-->
-    <link rel="stylesheet" href="css/sp.css">
-    <div class="title" id="sp">
-    <div class="line"></div>
-    <h3>视频</h3>
-    <div class="line"></div>
-  </div>
-  <div class="sp">
-  <video controls poster="image/fm.png">
-  <source src="video/xcm.mp4" type="video/mp4">
-  您的浏览器不支持 HTML5 video 标签。
-</video>
-<p>熊出没</p>
-  </div>
-  <!--视频结束-->
-  <!--页脚开始-->
-  <div class="footer">
-    <span>本源码原作者QQ:2044037949，请勿非法使用</span>
-  </div>
-  <!--页脚结束-->
+  </section>
+  <footer>
+    <p>版权所有 © 2023 应用软件</p>
+  </footer>
 </body>
 </html>
